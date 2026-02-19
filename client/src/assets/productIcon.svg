@@ -1,0 +1,9 @@
+<!-- save as productBoxSmall.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+  width="20" height="20" fill="none" stroke="currentColor"
+  stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M20 15.5V8.5a2 2 0 0 0-1-1.7l-6-3.5a2 2 0 0 0-2 0l-6 3.5a2 2 0 0 0-1 1.7v7a2 2 0 0 0 1 1.7l6 3.5a2 2 0 0 0 2 0l6-3.5a2 2 0 0 0 1-1.7z"/>
+  <path d="M4 7.5L12 12l8-4.5"/>
+  <path d="M12 21V12"/>
+</svg>
+

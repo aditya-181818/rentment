@@ -1,0 +1,113 @@
+.hero {
+  text-align: center;
+  background-color: rgb(216, 245, 252);
+  padding: 20px;
+  margin-top: 0;
+  min-height: 87vh; /* responsive height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Heading with animation */
+.hero_heading1:after {
+  content: "";
+  font-weight: 600;
+  font-size: 35px;
+  color: blue;
+  animation-name: animatingtext;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  text-align: center;
+  white-space: nowrap; /* stay in one line */
+  display: inline-block;
+  overflow: hidden;
+  
+}
+
+/* Animated heading text typing */
+@keyframes animatingtext {
+  0% {content: "RentMent";}
+  11% {content: "RentMent –";}
+  22% {content: "RentMent – Peer";}
+  33% {content: "RentMent – Peer -";}
+  44% {content: "RentMent – Peer -to";}
+  55% {content: "RentMent – Peer -to-";}
+  66% {content: "RentMent – Peer -to- Peer";}
+  77% {content: "RentMent – Peer -to- Peer Renting";}
+  100% {content: "RentMent – Peer -to- Peer Renting Platform";}
+}
+
+/* Paragraph with bouncing animation */
+.hero_para {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
+  color: black;
+  margin-top: 15px;
+  animation: bounceText 5s linear infinite alternate;
+}
+
+@keyframes bounceText {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(15%); } /* smaller safe bounce */
+}
+
+/* Image container */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 20px;
+}
+
+.image-container img {
+  max-width: 80%;
+  height: auto;
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 10px;         /* less padding */
+    min-height: auto;      /* no fixed height */
+  }
+
+  .hero_heading1:after {
+    font-size: 18px;       /* smaller font */
+  }
+
+  .hero_para {
+    font-size: 14px;       /* smaller para */
+    animation: bounceTextMobile 4s linear infinite alternate;
+  }
+
+  @keyframes bounceTextMobile {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(5%); }
+  }
+
+  .image-container img {
+    max-width: 60%;       /* shrink image more */
+  }
+}
+
+/* 📱 Extra small screens */
+@media (max-width: 480px) {
+  .hero_heading1:after {
+    font-size: 16px;       /* even smaller heading */
+  }
+
+  .hero_para {
+    font-size: 13px;       /* smaller para */
+  }
+
+  .image-container img {
+    max-width: 50%;       /* shrink further */
+  }
+}

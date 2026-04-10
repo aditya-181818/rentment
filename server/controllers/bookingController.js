@@ -1,5 +1,5 @@
 import Booking from "../models/Booking.js";
-import Product from "../models/product.js";
+import Product from "../models/Product.js";
 
 // Funtion to Check Availability of Product for a given Date
 const checkAvailability = async (product, rentalStartDate, rentalEndDate)=>{

@@ -1,6 +1,6 @@
 import imagekit from "../configs/imageKit.js";
 import Booking from "../models/Booking.js";
-import Product from "../models/product.js";
+import Product from "../models/Product.js";
 import User from "../models/User.js";
 import fs from 'fs';
 

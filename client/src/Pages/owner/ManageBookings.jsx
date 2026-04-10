@@ -47,7 +47,7 @@ const ManageBookings = () => {
               <th className='p-3 font-medium '>Product</th>
               <th className='p-3 font-medium  max-md:hidden'>Date Range</th>
               <th className='p-3 font-medium '>Total</th>
-              <th className='p-3 font-medium '>Payment</th>
+              <th className='p-3 font-medium max-md:hidden'>Payment</th>
               <th className='p-3 font-medium '>Actions</th>
             </tr>
           </thead>
@@ -65,7 +65,7 @@ const ManageBookings = () => {
 
                 <td className='p-3'>{currency}{booking.price}</td>
 
-                <td>
+                <td className='max-md:hidden'>
                  {booking.paymentStatus === "paid" ? (
                   <span className="px-3 py-1 rounded-full text-xs bg-green-100 text-green-700">
                    Paid

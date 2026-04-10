@@ -47,7 +47,7 @@ const ManageBookings = () => {
               <th className='p-3 font-medium '>Product</th>
               <th className='p-3 font-medium  max-md:hidden'>Date Range</th>
               <th className='p-3 font-medium '>Total</th>
-              <th className='p-3 font-medium >Payment</th>
+              <th className='p-3 font-medium '>Payment</th>
               <th className='p-3 font-medium '>Actions</th>
             </tr>
           </thead>
